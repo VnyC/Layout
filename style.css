@@ -1,0 +1,102 @@
+body{
+    margin: auto 0;
+}
+
+.zone {
+    cursor:pointer;
+    text-align: center;
+    font-size:1.2em;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+}
+
+.zone:hover {
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+
+.main-nav{
+    display: flex;
+    list-style: none;
+    font-size: 0.8em;
+    font-family: cursive;
+    margin: 0;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px){
+    .main-nav{
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+
+li{
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.left{
+    margin-left: auto;
+}
+
+/*Cover*/
+.cover{
+    width: 20rem;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+
+/*Grid*/
+.blue{
+    background: -webkit-linear-gradient(top,lightblue,grey);
+}
+
+.grid-wrapper{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+}
+
+
+.box > img{
+    width: 100%;
+}
+
+
+.box{
+    background: -webkit-linear-gradient( bottom right, grey, pink);
+    padding: 30px;
+    margin: 40px;
+
+}
+
+.box:hover{
+    transform: rotate(-8deg);
+}
+
+/*Footer*/
+.yellow{
+    background: -webkit-radial-gradient(white,lightblue)
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+}
